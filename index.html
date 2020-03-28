@@ -7,26 +7,25 @@
 </head>
 
 <body>
-    <h1>To DoList</h1>
+    <div id="container">
+        <h1>To Do List</h1>
+        <div class="add-div">
+            <input id="option" type="checkbox" name="field" value="option" class="largeCheckbox" onclick="handlers.toggleAll()">
+            <input type="text" id="input-add">
+            <button onclick="handlers.addTodo()" class="button-primary">add</button>
+            <hr>
+        </div>
+        <div class='update-div'>
+            <input type="text" id="update-input" value="Enter your text " onclick="this.value=''">
+            <input type="number" id="position" value='0' onfocus="this.value=''">
+            <button onclick="handlers.changeTodo()" class="button-change">Update</button>
+        </div>
+        <div id="placeholder">
+            <ul>
 
-    <input type="text" id="input">
-    <button onclick="handlers.addTodo()">add</button>
-    <hr>
-    <button onclick="handlers.displayTodo()">Display TodoList</button>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
-    <hr>
-    <br> text here new text <input type="text" id="update-input"><br> enter position<input type="number" id="position">
-    <button onclick="handlers.changeTodo()">update</button>
-    <hr>
-    <input type="number" id="delete">
-    <button onclick="handlers.deleteTodo()">Delete</button>
-    <hr>
-    <input type="number" id="complete">
-    <button id="toggle-comp">toggleCompleted</button>
-    <ul id="placeholder">
-
-    </ul>
-
+            </ul>
+        </div>
+    </div>
 </body>
 <script src="handlers/handler-script .js"></script>
 <!--script src="listeners/add.js"></!--script-->
