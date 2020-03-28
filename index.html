@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practical Javascript - watch and code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>To DoList</h1>
+
+    <input type="text" id="input">
+    <button onclick="handlers.addTodo()">add</button>
+    <hr>
+    <button onclick="handlers.displayTodo()">Display TodoList</button>
+    <button onclick="handlers.toggleAll()">Toggle All</button>
+    <hr>
+    <br> text here new text <input type="text" id="update-input"><br> enter position<input type="number" id="position">
+    <button onclick="handlers.changeTodo()">update</button>
+    <hr>
+    <input type="number" id="delete">
+    <button onclick="handlers.deleteTodo()">Delete</button>
+    <hr>
+    <input type="number" id="complete">
+    <button id="toggle-comp">toggleCompleted</button>
+    <ul id="placeholder">
+
+    </ul>
+
+</body>
+<script src="handlers/handler-script .js"></script>
+<!--script src="listeners/add.js"></!--script-->
+<!--script src="listeners/delete.js"></!--script>
+<script src="listeners/display.js"></script>
+<script src="listeners/toggle-all.js"></script-->
+<script src="listeners/toggle-completed.js"></script>
+<!--script src="listeners/update.js"></script-->
+
+</html>
